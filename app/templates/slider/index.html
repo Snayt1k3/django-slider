@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static thumbnail%}
+{% block content %}
+
+<div id="main-div">
+    <div id="text-block">
+
+        <h1>
+            Космическое агентство
+        </h1>
+        <span>
+            Национальное управление по аэронавтике и исследованию космического пространства — ведомство, относящееся к
+            федеральному правительству США и подчиняющееся непосредственно президенту США.
+        </span>
+    </div>
+    <div id="pictures">
+        <div class="benefits d-xs-flex ">
+            <div class="row1">
+                <div class="benefit">
+                    <img src="{% static 'img/fa6-solid_shuttle-space.svg'%}" alt="" class="benefit-img">
+                    <span class="benefit-descr">Спейс шаттлы —пилотируемые корабли</span>
+                </div>
+                <div class="benefit">
+                    <img src="{% static 'img/ion_telescope.svg'%}" alt="" class="benefit-img">
+                    <span class="benefit-descr">Лучшее телескопическое оборудование</span>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="benefit">
+                    <img src="{% static 'img/bi_moon-stars-fill.svg'%}" class="benefit-img" alt="">
+                    <span class="benefit-descr">Целимся на Луну и Марс</span>
+                </div>
+                <div class="benefit">
+                    <img src="{% static 'img/bxs_medal.svg'%}" alt="" class="benefit-img">
+                    <span class="benefit-descr">Золотая медаль по научным исследованиям</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'img/Фото.png'%}" id="space_img">
+        </div>
+    </div>
+</div>
+<section id="slider">
+    <div class="slider-title">
+        <h2>Фотографии</h2>
+    </div>
+    <div class="main">
+        <div class="slider slider-for">
+            {% for item in slider_items %}
+            <div class="cslide"><img src="{{ item.image.url }}" class="cpicture"></div>
+            <div class="cslide"><img src="{{ item.image.url }}" class="cpicture"></div>
+            <div class="cslide"><img src="{{ item.image.url }}" class="cpicture"></div>
+            <div class="cslide"><img src="{{ item.image.url }}" class="cpicture"></div>
+            <div class="cslide"><img src="{{ item.image.url }}" class="cpicture"></div>
+            {% endfor %}
+        </div>
+        <div class="slider-nav row">
+            {% for item in slider_items %}
+            <div class="slide"><img src="{{ item.image.url }}"></div>
+            <div class="slide"><img src="{{ item.image.url }}"></div>
+            <div class="slide"><img src="{{ item.image.url }}"></div>
+            <div class="slide"><img src="{{ item.image.url }}"></div>
+            <div class="slide"><img src="{{ item.image.url }}"></div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    $('.slider-for').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: false,
+     fade: true,
+     asNavFor: '.slider-nav',
+   });
+   
+   
+   $(".slider-nav").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  speed: 500,
+  asNavFor: ".slider-for",
+  arrows: true
+});
+
+</script>
+{% endblock %}

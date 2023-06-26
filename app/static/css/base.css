@@ -1,0 +1,235 @@
+body{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA;
+}
+
+nav {
+    display: flex;
+    width: 1440px;
+    padding: 0px 150px;
+    align-items: center;
+    gap: 30px;
+    background: var(--unnamed, #0A121E);    
+}
+
+#logo {
+    width: 120px;
+    height: 90px;
+    flex-shrink: 0;
+    margin: -8px 0;
+}
+
+.navbar-toggler-icon{
+    color: var(--unnamed, #FF342B);
+}
+
+#signin {
+    display: flex;
+    padding: 12px 18px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 0;
+    border-radius: 4px;
+    background: var(--unnamed, #FF342B);
+    color: #FFF;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+    flex: 1 0 0;
+}
+.nav-item .nav-link{
+    color: #FFF;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+#main-div{
+    display: flex;
+    padding: 90px 150px;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+#text-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#text-block h1{
+    color: var(--unnamed, #0A121E);
+    text-align: center;
+
+    font-size: 56px;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+
+}
+
+
+#text-block span{
+    display: flex;
+    width: 751px;
+    flex-direction: column;
+    color: var(--unnamed, #3C3C3C);
+    text-align: center;
+
+    font-size: 18px;
+    font-family: Montserrat;
+    line-height: 30px;
+    letter-spacing: 0.36px; 
+}
+
+#pictures {
+    display: flex;
+    align-items: center;
+    gap: 127px;
+}
+
+#pictures {
+    display: flex;
+    align-items: center;
+    gap: 127px;
+}
+
+.row1{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    
+    }
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+.benefit {
+    display: flex;
+    width: 263px;
+    height: 200px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    }
+
+#space_img{
+    width: 457px;
+    height: 457px;
+    border-radius: 40px;
+}
+
+.benefit-descr{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: var(--unnamed, #0A121E);
+    text-align: center;
+
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.28px;
+}
+
+
+.main {
+    font-family:Arial;
+    width:500px;
+    display:block;
+    margin:0 auto;
+  }
+h3 {
+      font-size: 36px;
+      line-height: 100px;
+      margin: 10px;
+      padding: 2%;
+      position: relative;
+      text-align: center;
+  }
+
+#slider {
+    width: 1440px;
+    background: var(--unnamed, #3C3C3C);
+}
+
+.slider-title{
+    display: flex;
+    justify-content: center;
+}
+
+.slider-title h2 {
+color: #FFF;
+font-size: 42px;
+font-family: Montserrat;
+font-weight: 700;
+line-height: 52px;
+letter-spacing: 0.84px;
+line-height: 100px;
+position: relative;
+align-items: center;
+}
+
+.slide img{
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    margin: 0 100px;
+}
+
+.slick-arrow.slick-prev{
+    z-index: 10;
+    position: absolute;
+    margin-left: -270px;
+}
+
+.slick-arrow.slick-next{
+    z-index: 10;
+    position: absolute;
+    margin-right: -270px;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../img/menu.svg); /* Replace with your custom icon */
+}
+
+.slide img{
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.cslide{
+    width: 600px;
+}
+
+.cslide img{
+    border-radius: 30px;
+    width: 450px;
+    height: 200px;
+    margin: 0 50px;
+}
