@@ -1,5 +1,5 @@
 body{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,9 @@ nav {
     padding: 0px 150px;
     align-items: center;
     gap: 30px;
-    background: var(--unnamed, #0A121E);    
+    background: var(--unnamed, #0A121E);
 }
+
 
 #logo {
     width: 120px;
@@ -64,6 +65,7 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 90px;
+    flex-wrap: wrap;
 }
 
 #text-block{
@@ -71,6 +73,7 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 
 }
 
@@ -96,7 +99,7 @@ nav {
     font-size: 18px;
     font-family: Montserrat;
     line-height: 30px;
-    letter-spacing: 0.36px; 
+    letter-spacing: 0.36px;
 }
 
 #pictures {
@@ -115,7 +118,7 @@ nav {
     display: flex;
     align-items: flex-start;
     gap: 30px;
-    
+
     }
 .benefits{
     display: flex;
@@ -220,7 +223,7 @@ align-items: center;
     border-radius: 30px;
     width: 100px;
     height: 100px;
-    
+
 }
 
 .cslide{
@@ -231,5 +234,63 @@ align-items: center;
     border-radius: 30px;
     width: 450px;
     height: 200px;
-    margin: 0 50px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+    nav{
+        width: 900px;
+    }
+
+    #logo {
+        position: relative;
+        right: 140px;
+    }
+    #signin{
+        position: relative;
+        right: -80px;
+    }
+
+    h1 {
+        font-size: 24px;
+      }
+
+    #text-block span{
+        font-size: 24px;
+
+    }
+    #pictures{
+        max-width: 768px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .benefit{
+        margin-top: 50px;
+    }
+    .benefit img{
+        width: 120px;
+        height: 120px;
+    }
+    .benefit span{
+        font-size: 20px;
+    }
+    #space_img{
+        height: 700px;
+        width: 700px;
+    }
+    .cslide{
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .cslide img{
+        border-radius: 40px;
+        width: 450px;
+        height: 400px;
+    }
+    .slick-list {
+        overflow: visible;
+    }
 }
